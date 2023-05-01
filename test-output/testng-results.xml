@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14396" started-at="2023-05-01T17:53:34 IST" finished-at="2023-05-01T17:53:48 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@5579bb86]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="14396" started-at="2023-05-01T17:53:34 IST" finished-at="2023-05-01T17:53:48 IST">
+      <class name="cucumberOptions.TestNGTestRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOptions.TestNGTestRunner@5579bb86]" name="setUpClass" is-config="true" duration-ms="1302" started-at="2023-05-01T17:53:34 IST" finished-at="2023-05-01T17:53:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@419a20a6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@5579bb86]" name="runScenario" duration-ms="12292" started-at="2023-05-01T17:53:35 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-01T17:53:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search text"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Google]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pageObjects.TestPage.typeText(TestPage.java:36)
+at stepDefinitions.TestPageStepDefinition.i_enter_the_text_to_search(TestPageStepDefinition.java:30)
+at ✽.I enter the text to search(file:///C:/Users/43488/OneDrive%20-%20Hexaware%20Technologies%20Limited/Documents/J/CucumberFramework/src/test/java/features/Test.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestNGTestRunner@5579bb86]" name="tearDownClass" is-config="true" duration-ms="733" started-at="2023-05-01T17:53:48 IST" finished-at="2023-05-01T17:53:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberOptions.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
